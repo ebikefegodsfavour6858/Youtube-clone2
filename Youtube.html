@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+      .first-pic{
+        width: 120px;
+        border-radius: 200px;
+      }
+
+      .search-bar{
+        font-size: 23px;
+        border-radius: 120px;
+        border-color: rgb(235, 235, 235);
+        border-style: hidden;
+        border-width: 3.5px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 22px;
+        width: 700px;
+        box-shadow:1px 2.5px 0.8px rgba(235,235,235, 1);
+        transition: box-shadow 0.20s;
+      }
+
+      .link-in{
+        font-family: montserrat;
+        font-weight: bold;
+        font-size: 35px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+      }
+
+      .email{
+        font-size: 17px;
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+
+      .email-bar{
+        font-size: 19px;
+        border-radius: 7px;
+        border-style: solid;
+        width: 450px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 20px;
+        padding-left: 7px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+
+      .agree-text{
+        font-family: Arial;
+        color: grey;
+        font-size: 10px;
+        margin-top: 15px;
+        margin-bottom: 0;
+      }
+
+      .agree{
+        background-color: blue;
+        color: white;
+        border-color: blue;
+        border-style: solid;
+        border-radius: 70px;
+        width: 500px;
+        height: 60px;
+        margin-top: 19px;
+      }
+
+      .happen-ing{
+        vertical-align: 20px;
+        margin-left: 15px;
+        font-size: 25px;
+        color: grey;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 70px;
+      }
+
+      .tweet-button{
+        background-color: rgb(33, 142, 185);
+        color: white;
+        font-weight: bold;
+        border-color: rgb(33,142,185);
+        vertical-align: 20px;
+        border-radius: 27px;
+        height: 45px;
+        border-style: solid;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: background-color 0.17s,color 0.17s;
+      }
+      
+      .tweet-button:hover{
+        cursor: pointer;
+        background-color: white;
+        color: rgb(33, 142, 185);
+      }
+      
+      .name-bar{
+        width: 470px;
+      }
+      .name-bar,email-bar{
+        display: block;
+      }
+      
+      .thanks{
+        width:370px
+      }
+      .yes{
+        margin-left: 9px;
+        margin-right: 9px;
+      }
+
+      .thanks,.yes,.no{
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .first-name, .last-name{
+        display: inline-blockS;
+        border-radius: 7px;
+        padding-bottom: 12px;
+        padding-top: 12px;
+        border-style: solid;
+        margin-top: 12px;
+      }
+      
+      .email-second{
+        display: block;
+        border-radius: 7px;
+        padding-bottom: 12px;
+        padding-top: 12px;
+        border-style: solid;
+        margin-top: 12px;
+      }
+
+      .sign-up{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-style: bold;
+        padding-left: 230px;
+        padding-right: 230px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 15px;
+        border-style: solid;
+        border-color:black;
+        border-radius: 8px;
+        font-weight: bold;
+      }
+      
+      .pickup,.destination{
+        display: block;
+        display: inline-blockS;
+        border-radius: 7px;
+        padding-bottom: 12px;
+        padding-top: 12px;
+        border-style: solid;
+        margin-top: 12px;
+        width: 550px;
+        background-color: rgb(253, 241, 241);
+
+      }
+      .request-now{
+        font-size: 45px;
+        margin-bottom: 0;
+      }
+
+      .request{
+        font-size: 25px;
+        background-color: black;
+        color: white;
+        width: 200px;
+        height:65px;
+        margin-top: 50px;
+      }
+
+      .for-later{
+        background-color: rgb(253, 241, 241);
+        width: 200px;
+        height:65px;
+        margin-top: 50px;
+        margin-left: 20px;
+        border-style: solid;
+        border-color: rgb(253, 241, 241);
+      }
+
+      .second-pic{
+        width: 400px;
+      }
+
+      .div-one{
+        width: 500px;
+        height: 150px;
+        border-style: solid;
+        border-color: gray;
+        padding-left: 15px;
+      }
+
+      .div-two{
+        border-style: solid;
+        border-color: rgb(231, 225, 225);
+        border-width: 3.5px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 22px;
+        width: 700px;
+        margin-left: 150px;
+        box-shadow:1px 2.5px 0.8px rgb(231, 225, 225);
+        transition: box-shadow 0.20s;
+      }
+
+      .third-pic{
+        width: 230px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .oliver{
+        font-weight: bold;
+        font-family: montserrat;
+        font-size: 30px;
+        margin-top: 12px;
+        margin-bottom: 0;
+        padding-left: 12px;
+      }
+
+      .oliver-friends{
+        color: gray;
+        font-size: 25px;
+        margin-top: 0px;
+        padding-left: 12px;
+      }
+
+      .add-one{
+        color: white;
+        background-color: rgb(33, 142, 185);
+        border-color: rgb(33, 142, 185);
+        border-radius: 5px;
+        border-style: solid;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: 12px;
+        margin-bottom: 12px;
+
+      }
+
+      .div-three{
+         border-style: solid;
+        border-color: gray;
+        width: 230px;
+        margin-top: 30px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 15px;
+      }
+
+    .google-search,.lucky{
+    display: inline-block;
+    font-size: 25px;
+        background-color: black;
+        color: white;
+        width: 200px;
+        height:65px;
+        margin-top: 10px;
+        vertical-align: top;
+   }
+
+    .div-four{
+      text-align: center;
+    }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="div-four">
+<img class="second-pic" src="Thumbnails/google-logo-9834 (1).png">
+    </div>
+
+  <div class="div-four">
+   
+  <input class="search-bar" type="text" placeholder="Search Google or type a URL">
+  <p></p>
+  </div>
+
+<div class="div-four">
+
+  <button class="google-search">
+    Google Search
+  </button>
+
+  <button class="lucky">
+    I'm Feeling Lucky
+  </button>
+  </div>
+
+  <p class="link-in">
+    LinkedIn signup
+  </p>
+  
+  <input class="name-bar"  type="text" placeholder="Name">
+
+  <input class="email-bar" type="text" placeholder="email address">
+
+<p class="agree-text">
+  By clicking Agree &amp; Join, you agree to our Privacy Policy
+</p>
+
+<button class="agree">
+  Agree &amp; Join
+</button>
+
+<p></p>
+<input class="first-name" type="text" placeholder="First name">
+<input class="last-name" type="text" placeholder="Last name">
+<input class="email-second" type="text" placeholder="Email">
+<button class="sign-up">
+  Sign up
+</button>
+
+
+<p class="request-now">
+  Request a ride now
+</p>
+
+<input class="pickup" type="text" placeholder="Enter pickup location">
+<input class="destination" type="text" placeholder="Enter destination">
+<button class="request">
+  Request now
+</button>
+
+<button class="for-later">
+  Schedule for later
+</button>
+<p></p>
+
+<div class="div-two">
+<img class="first-pic" src="Thumbnails/140.jpg">
+
+<span class="happen-ing">What's happening&quest; </span>
+
+<button class="tweet-button">
+  Tweet
+</button>
+</div>
+
+<p></p>
+
+<div class="div-one">
+  <p class="thanks">
+  Thanks for chatting with our customer support&period;Would you like to take our quick survey&quest;
+</p>
+
+<button class="yes">
+  Yes
+</button>
+
+<button class="no">
+  No
+</button>
+</div>
+
+<div class="div-three">
+<img class="third-pic" src="Thumbnails/eyes of the gods.jpg">
+<p class="oliver">
+  Oliver
+</p>
+<p class="oliver-friends">
+2 mutual friends
+</p>
+
+<button class="add-one">
+  Add friend
+</button>
+</div>
+
+<div class="div-three">
+
+<img class="third-pic" src="Thumbnails/140.jpg">
+<p class="oliver">
+  Princess
+</p>
+<p class="oliver-friends">
+10 mutual friends
+</p>
+
+<button class="add-one">
+  Add friend
+</button>
+</div>
+
+<div class="div-three">
+
+<img class="third-pic" src="Thumbnails/thumbnail-1.webp">
+<p class="oliver">
+  Jessica
+</p>
+<p class="oliver-friends">
+6 mutual friends
+</p>
+
+<button class="add-one">
+  Add friend
+</button>
+</div>
+
+</body>
+</html>
